@@ -1,1 +1,2 @@
 # revisaoprova-02
+NAO GOSTO DE READE, POIS ATRAPALHA
