@@ -92,4 +92,46 @@ for n in range(10):
 print(f'A soma dos pares são: {pares}')
 print(f'A soma dos ímpares são: {impares}')
 
-# 10. Escreva um algoritmo que solicite do usuário 10 valores inteiros. O algoritmo deverá calcular o somatório dos números pares e dos números ímpares que forem digitados pelo usuário. Após o somatório, o algoritmo deve informar se o somatório dos números ímpares é maior, igual ou menor do que o dos números pares.
+# 10. Escreva um algoritmo que solicite do usuário 10 valores inteiros. O algoritmo deverá calcular o somatório dos números pares e dos números ímpares que forem digitados pelo usuário. 
+# Após o somatório, o algoritmo deve informar se o somatório dos números ímpares é maior, igual ou menor do que o dos números pares.
+
+soma_pares = 0
+soma_impares = 0
+
+for n in range(10):
+    val_inteiros = int(input('Digite um valor inteiro: '))
+
+    if val_inteiros % 2 == 0:
+        soma_pares += val_inteiros
+    
+    else:
+        soma_impares += val_inteiros
+    
+if soma_pares > soma_impares:
+    print(f'A soma dos ímpares é menor que a dos pares')
+elif soma_pares == soma_impares:
+    print(f'A soma dos ímpares é i igual a dos pares')
+else:
+    print(f'A soma dos ímpares é maior que a dos pares')
+
+# 11. Escreva um algoritmo que informe ao usuário que calcula o somatório de uma sequência de números. O algoritmo deverá solicitar ao usuário o total de números que deverão ser somados. Depois o algoritmo deve realizar a soma de todos os números 
+# e apresentar na tela o resultado dessa soma conforme exemplo abaixo: 
+# Digite o total de números a serem somados: 5 
+# 2 7 3 8 6 (números digitados pelo usuário)
+# Saída no terminal: 2+7+3+8+6=26
+
+valores = int(input('Qual o total de números que deverão ser somados? '))
+
+soma4 = 0
+expressao = ''
+
+for n in range(valores):
+    digito = int(input('Digite um valor: '))
+    soma4 += digito
+
+    if n == 0:
+        expressao += str(digito)
+    else:
+        expressao += '+' + str(digito)
+
+print(f'{expressao}={soma4}')
